@@ -1,0 +1,15 @@
+{
+  "name": "hero_bruce-wayne",
+  "version": "0.0.1",
+  "description": "Simple landing page hero built with PostCSS, vanilla HTML, and ES6. Built & Dev'd on Parcel.",
+  "main": "index.js",
+  "author": "Nathan Rothenberger | @rttnbrgr",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
