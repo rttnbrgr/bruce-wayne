@@ -4,3 +4,6 @@ node_modules
 # Parcel build artifacts
 dist
 .cache
+
+# 
+yarn-error.log
