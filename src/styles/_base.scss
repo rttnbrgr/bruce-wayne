@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-1: #ef476f;
+  --color-2: #ffd166;
+  --color-3: #06d6a0;
+  --primaryFont: "Work Sans", sans-serif;
+}
+
+// Breakpoints
+.wrapper {
+  background-color: rosybrown;
+}

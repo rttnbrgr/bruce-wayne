@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;900&display=swap");
+
+body {
+  font-family: var(--primaryFont);
+}
+
+h1 {
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 1;
+  color: var(--color-3);
+}
+
+h2 {
+  font-family: inherit;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--color-3);
+}
+
+p {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #777;
+}
