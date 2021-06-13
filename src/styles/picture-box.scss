@@ -1,6 +1,10 @@
 .picture-box__parent {
   width: 100%;
   max-width: 600px;
+  margin: 0 auto;
+  @media screen and (min-width: 1024px) {
+    margin-left: 0;
+  }
 }
 
 .picture-box__wrapper {
