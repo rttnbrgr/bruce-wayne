@@ -1,7 +1,6 @@
 @import "_normalize";
 @import "_typography";
 @import "base";
-
 @import "picture-box";
 
 .wrapper {
@@ -72,5 +71,35 @@
 
   .picture-box__wrapper {
     // background: tan;
+  }
+}
+
+// Debug
+// Breakpoints
+.wrapper {
+  background-color: rosybrown;
+}
+
+@media screen and (min-width: $bp-sm) {
+  .wrapper {
+    background-color: teal;
+  }
+}
+
+@media screen and (min-width: $bp-md) {
+  .wrapper {
+    background-color: chartreuse;
+  }
+}
+
+@media screen and (min-width: $bp-lg) {
+  .wrapper {
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: $bp-xl) {
+  .wrapper {
+    background-color: purple;
   }
 }
