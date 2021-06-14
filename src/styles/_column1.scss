@@ -1,7 +1,4 @@
 .col--1 {
-  display: none;
-  flex: 0 1 50%;
-
   h1 {
     text-align: center;
     margin: 0;
@@ -18,9 +15,5 @@
     &:nth-child(4) {
       opacity: 0.8;
     }
-  }
-
-  @media screen and (min-width: $bp-lg) {
-    display: block;
   }
 }
