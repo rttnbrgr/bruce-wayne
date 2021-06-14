@@ -1,75 +1,9 @@
 @import "_normalize";
+@import "_typography";
 @import "base";
 
+// Component Pieces
+@import "wrapper";
+@import "column1";
 @import "picture-box";
-
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  padding: 3rem;
-}
-
-.container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: -3rem;
-  margin-right: -3rem;
-  > div {
-    padding: 0 3rem;
-  }
-
-  flex-direction: column;
-  @media screen and (min-width: 1024px) {
-    flex-direction: row;
-  }
-}
-
-.col--1 {
-  // background: rgba(0, 255, 0, 0.2);
-  flex: 0 1 50%;
-  h1 {
-    text-align: center;
-    line-height: 1;
-    margin: 0;
-    font-family: sans-serif;
-    color: var(--color-3);
-    font-size: 80px;
-
-    &:nth-child(1) {
-      opacity: 0.2;
-    }
-    &:nth-child(2) {
-      opacity: 0.4;
-    }
-    &:nth-child(3) {
-      opacity: 0.6;
-    }
-    &:nth-child(4) {
-      opacity: 0.8;
-    }
-  }
-}
-
-.col--2 {
-  flex: 0 0 50%;
-  > div {
-    position: relative;
-  }
-
-  h2 {
-    font-size: 48px;
-    color: var(--color-3);
-  }
-}
-
-.debug {
-  .col--2 {
-    // background: green;
-  }
-
-  .picture-box__wrapper {
-    // background: tan;
-  }
-}
+@import "text-block";

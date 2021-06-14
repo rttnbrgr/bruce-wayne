@@ -1,0 +1,76 @@
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  // padding: 3rem;
+  padding-top: 1.5rem; // 24
+  // merge
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: $bp-xl) {
+    padding: 4rem;
+    flex-direction: row;
+
+    .col {
+      background: pink;
+    }
+  }
+}
+
+// Debug
+// Breakpoints
+.wrapper {
+  &::before {
+    content: "";
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rosybrown;
+    @media screen and (min-width: $bp-sm) {
+      background-color: teal;
+    }
+    @media screen and (min-width: $bp-md) {
+      background-color: chartreuse;
+    }
+
+    @media screen and (min-width: $bp-lg) {
+      background-color: white;
+    }
+
+    @media screen and (min-width: $bp-xl) {
+      background-color: yellowgreen;
+    }
+
+    @media screen and (min-width: $bp-xxl) {
+      background-color: purple;
+    }
+  }
+}
+
+.col--1 {
+  display: none;
+  flex: 0 1 50%;
+
+  @media screen and (min-width: $bp-xl) {
+    display: block;
+  }
+}
+
+.col--2 {
+  flex: 0 0 50%;
+  max-width: var(--pictureBoxMaxWidth);
+
+  > div {
+    position: relative;
+  }
+
+  @media screen and (min-width: $bp-xl) {
+    max-width: none;
+  }
+}
