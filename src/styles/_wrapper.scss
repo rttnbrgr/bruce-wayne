@@ -44,6 +44,10 @@
     }
 
     @media screen and (min-width: $bp-xl) {
+      background-color: yellowgreen;
+    }
+
+    @media screen and (min-width: $bp-xxl) {
       background-color: purple;
     }
   }
@@ -53,7 +57,7 @@
   display: none;
   flex: 0 1 50%;
 
-  @media screen and (min-width: $bp-lg) {
+  @media screen and (min-width: $bp-xl) {
     display: block;
   }
 }
@@ -64,5 +68,9 @@
 
   > div {
     position: relative;
+  }
+
+  @media screen and (min-width: $bp-xl) {
+    max-width: none;
   }
 }
