@@ -1,20 +1,20 @@
 .picture-box__parent {
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+  // margin: 0 auto;
+  min-height: 200px;
+  // background-color: chocolate;
+  // margin-right: -3rem;
+
   @media screen and (min-width: 1024px) {
+    max-width: var(--pictureBoxMaxWidth);
     margin-left: 0;
   }
 }
 
 .picture-box__wrapper {
-  padding-top: 57px;
-  padding-bottom: 110px;
-  padding-right: 106px;
   width: 100%;
-  max-width: 600px;
-  padding-right: 20%;
-  background: rgba(0, 0, 200, 0.2);
+  max-width: var(--pictureBoxMaxWidth);
+  // background: rgba(0, 0, 200, 0.2);
   padding: 0;
   padding-top: 10%;
   padding-bottom: 20%;

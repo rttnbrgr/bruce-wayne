@@ -8,10 +8,14 @@ html {
 }
 
 :root {
+  // Colors
   --color-1: #ef476f;
   --color-2: #ffd166;
   --color-3: #06d6a0;
+  // Type
   --primaryFont: "Work Sans", sans-serif;
+  // Sizing
+  --pictureBoxMaxWidth: 640px;
 }
 
 // Variables we cant assign to root
