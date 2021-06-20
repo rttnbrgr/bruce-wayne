@@ -46,4 +46,17 @@
   }
 }
 
-@import "picture-box-color";
+.picture-box .box {
+  position: relative;
+  overflow: hidden;
+  padding-top: var(--ratioLandscape);
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+}
