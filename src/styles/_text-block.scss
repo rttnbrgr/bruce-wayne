@@ -1,5 +1,5 @@
 .text-block {
-  padding: 3rem 2rem 0;
+  padding: 4rem var(--inset) 0;
 
   @media screen and (min-width: $bp-md) {
     padding-left: 0;

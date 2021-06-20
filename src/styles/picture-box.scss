@@ -36,9 +36,12 @@
     width: calc(80% * 0.6 * 0.6 * 9 / 16);
     position: absolute;
     bottom: 0;
-    right: 0;
-    right: calc(80% * 0.6);
-    transform: translate3d(50%, 0, 0);
+    // desktop
+    // right: 0;
+    // right: calc(80% * 0.6);
+    // transform: translate3d(50%, 0, 0);
+    // mobile
+    left: var(--inset);
 
     .box {
       padding-top: var(--ratioPortrait);
