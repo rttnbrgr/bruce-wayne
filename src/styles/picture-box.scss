@@ -1,9 +1,6 @@
 .picture-box__parent {
   width: 100%;
-  // margin: 0 auto;
   min-height: 200px;
-  // background-color: chocolate;
-  // margin-right: -3rem;
 
   @media screen and (min-width: 1024px) {
     max-width: var(--pictureBoxMaxWidth);
@@ -14,36 +11,18 @@
 .picture-box__wrapper {
   width: 100%;
   max-width: var(--pictureBoxMaxWidth);
-  // background: rgba(0, 0, 200, 0.2);
   padding: 0;
   padding-top: 10%;
   padding-bottom: 20%;
   position: relative;
 }
 
-@mixin pictureBoxBgWithColor {
-  background: linear-gradient(to right, var(--bgColor), var(--bgColor)),
-    var(--bgImage);
-  background-position: center center;
-  background-size: cover;
-  background-blend-mode: var(--bgBlendMode), normal;
-}
-
 .picture-box {
-  --bgColor: var(--color-1);
-  --bgImage: url(https://picsum.photos/480/270?grayscale);
-  --bgBlendMode: screen;
   --ratioLandscape: calc(9 / 16 * 100%);
   --ratioPortrait: calc(16 / 9 * 100%);
 
   &--1 {
     width: 80%;
-
-    .box {
-      background: var(--color-1);
-      padding-top: var(--ratioLandscape);
-      @include pictureBoxBgWithColor;
-    }
   }
 
   &--2 {
@@ -51,16 +30,9 @@
     position: absolute;
     top: 0;
     right: 0;
-
-    .box {
-      padding-top: var(--ratioLandscape);
-      @include pictureBoxBgWithColor;
-      --bgColor: var(--color-3);
-      --bgImage: url(https://picsum.photos/288/162?grayscale);
-    }
   }
 
-  &--3 {
+  &--3.picture-box {
     width: calc(80% * 0.6 * 0.6 * 9 / 16);
     position: absolute;
     bottom: 0;
@@ -70,9 +42,8 @@
 
     .box {
       padding-top: var(--ratioPortrait);
-      @include pictureBoxBgWithColor;
-      --bgColor: var(--color-2);
-      --bgImage: url(https://picsum.photos/98/173?grayscale);
     }
   }
 }
+
+@import "picture-box-color";

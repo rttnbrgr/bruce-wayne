@@ -1,0 +1,35 @@
+@mixin pictureBoxBgWithColor {
+  background: linear-gradient(to right, var(--bgColor), var(--bgColor)),
+    var(--bgImage);
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: var(--bgBlendMode), normal;
+}
+
+.picture-box {
+  --bgColor: var(--color-1);
+  --bgImage: url(https://picsum.photos/480/270?grayscale);
+  --bgBlendMode: screen;
+
+  &--1 {
+    .box {
+      @include pictureBoxBgWithColor;
+    }
+  }
+
+  &--2 {
+    .box {
+      @include pictureBoxBgWithColor;
+      --bgColor: var(--color-3);
+      --bgImage: url(https://picsum.photos/288/162?grayscale);
+    }
+  }
+
+  &--3 {
+    .box {
+      @include pictureBoxBgWithColor;
+      --bgColor: var(--color-2);
+      --bgImage: url(https://picsum.photos/98/173?grayscale);
+    }
+  }
+}
