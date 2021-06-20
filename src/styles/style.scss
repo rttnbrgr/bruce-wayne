@@ -7,3 +7,10 @@
 @import "column1";
 @import "picture-box";
 @import "text-block";
+
+svg {
+  fill: green;
+  path {
+    fill: inherit;
+  }
+}
