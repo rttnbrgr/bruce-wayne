@@ -16,11 +16,19 @@ html {
   --primaryFont: "Work Sans", sans-serif;
   // Sizing
   --pictureBoxMaxWidth: 640px;
+  --inset: 32px;
 }
 
 // Variables we cant assign to root
 $bp-sm: 468px;
+$bp-smedium: 608px;
 $bp-md: 768px;
 $bp-lg: 1024px;
 $bp-xl: 1280px;
 $bp-xxl: 1440px;
+
+// :root {
+//   @media screen and (min-width: $bp-sm) {
+//     --inset:
+//   }
+// }
