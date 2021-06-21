@@ -8,14 +8,3 @@
 @import "picture-box";
 // @import "picture-box-color";
 @import "text-block";
-
-svg {
-  fill: green;
-  path {
-    fill: inherit;
-  }
-}
-
-.svg-bucket {
-  display: none;
-}
