@@ -46,6 +46,13 @@
     .box {
       padding-top: var(--ratioPortrait);
     }
+
+    @media screen and (min-width: $bp-xl) {
+      // desktop
+      left: initial;
+      right: calc(80% * 0.6);
+      transform: translate3d(50%, 0, 0);
+    }
   }
 }
 
