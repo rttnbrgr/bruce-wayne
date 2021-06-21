@@ -10,13 +10,26 @@
   justify-content: center;
   flex-direction: column;
 
+  @media screen and (min-width: $bp-smedium) {
+    padding: 3rem;
+  }
+
   @media screen and (min-width: $bp-xl) {
     padding: 4rem;
     flex-direction: row;
-
     // .col {
     //   background: pink;
     // }
+    .col--1 {
+      background: rgba(200, 0, 200, 0.2);
+    }
+    .col--2 {
+      background: rgba(0, 200, 200, 0.2);
+    }
+    .col--1,
+    .col--2 {
+      max-width: 640px;
+    }
   }
 }
 
