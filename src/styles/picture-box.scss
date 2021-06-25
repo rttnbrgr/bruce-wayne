@@ -12,8 +12,8 @@
   width: 100%;
   max-width: var(--pictureBoxMaxWidth);
   padding: 0;
-  padding-top: 10%;
-  padding-bottom: 20%;
+  padding-top: var(--pictureBoxTopPad);
+  padding-bottom: var(--pictureBoxBottomPad);
   position: relative;
 }
 
@@ -41,7 +41,7 @@
     // right: calc(80% * 0.6);
     // transform: translate3d(50%, 0, 0);
     // mobile
-    left: var(--inset);
+    left: var(--gutter);
 
     .box {
       padding-top: var(--ratioPortrait);

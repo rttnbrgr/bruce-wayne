@@ -18,7 +18,9 @@ html {
   --primaryFont: "Work Sans", sans-serif;
   // Sizing
   --pictureBoxMaxWidth: 640px;
-  --inset: 32px;
+  --pictureBoxTopPad: 10%;
+  --pictureBoxBottomPad: calc(2 * var(--pictureBoxTopPad));
+  --gutter: 32px;
 }
 
 // Variables we cant assign to root
