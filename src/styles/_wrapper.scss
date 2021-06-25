@@ -106,10 +106,21 @@ svg {
   display: flex;
   flex-direction: column;
   // test position
-  position: absolute;
-  top: 4332px;
-  left: 408px;
-  width: 100px;
+  &.bucket--abs {
+    position: absolute;
+    top: 432px;
+    left: 408px;
+    width: 100px;
+    display: none;
+
+    @media screen and (min-width: $bp-xl) {
+      position: relative;
+      // reset and override inline styles
+      width: 100%;
+      top: initial !important;
+      left: initial !important;
+    }
+  }
 
   svg {
     width: 100%;
@@ -139,5 +150,22 @@ svg {
   }
   > svg:last-child {
     margin-bottom: 0;
+  }
+}
+
+.svg-bucket__parent {
+  --inset2: 16px;
+  // position to the top left
+  margin-top: -20%;
+  margin-left: calc((80% * 0.6 * 0.6 * 9 / 16) + var(--gutter));
+  margin-right: calc(-1 * var(--gutter));
+  // inset
+  padding-top: var(--inset2);
+  padding-left: var(--inset2);
+
+  @media screen and (min-width: $bp-smedium) {
+    --inset2: 32px;
+    margin-right: 0;
+    padding-right: var(--inset2);
   }
 }
