@@ -82,7 +82,7 @@ function caclulateOffset() {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   addSvgStack();
-  positionSvgStack();
-  caclulateOffset();
-  positionSvgStack();
+  // positionSvgStack();
+  // caclulateOffset();
+  // positionSvgStack();
 });
