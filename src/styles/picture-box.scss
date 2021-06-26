@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 200px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $bp-lg) {
     max-width: var(--pictureBoxMaxWidth);
     margin-left: 0;
   }
@@ -36,11 +36,6 @@
     width: calc(80% * 0.6 * 0.6 * 9 / 16);
     position: absolute;
     bottom: 0;
-    // desktop
-    // right: 0;
-    // right: calc(80% * 0.6);
-    // transform: translate3d(50%, 0, 0);
-    // mobile
     left: var(--gutter);
 
     .box {
@@ -48,7 +43,6 @@
     }
 
     @media screen and (min-width: $bp-xl) {
-      // desktop
       left: initial;
       right: calc(80% * 0.6);
       transform: translate3d(50%, 0, 0);
