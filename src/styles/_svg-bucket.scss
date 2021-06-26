@@ -1,0 +1,89 @@
+// Single columng
+.svg-bucket__parent {
+  // position to the top left
+  margin-top: -20%;
+  margin-left: calc((80% * 0.6 * 0.6 * 9 / 16) + var(--gutter));
+  margin-right: calc(-1 * var(--gutter));
+  // inset
+  padding-top: var(--inset);
+  padding-left: var(--inset);
+
+  @media screen and (min-width: $bp-smedium) {
+    --inset: 32px;
+    margin-right: 0;
+    padding-right: var(--inset);
+  }
+
+  @media screen and (min-width: $bp-xl) {
+    display: none;
+  }
+}
+
+// Shared SVG Rules
+.svg-bucket {
+  // display: none;
+  display: flex;
+  flex-direction: column;
+  // // test position
+  // &.bucket--abs {
+  //   position: absolute;
+  //   top: 432px;
+  //   left: 408px;
+  //   width: 100px;
+  //   display: none;
+
+  //   @media screen and (min-width: $bp-xl) {
+  //     position: relative;
+  //     // reset and override inline styles
+  //     width: 100%;
+  //     top: initial !important;
+  //     left: initial !important;
+  //   }
+  // }
+
+  svg {
+    width: 100%;
+    height: auto;
+
+    &.svg--fill {
+      fill: var(--color-3);
+    }
+
+    &.svg--stroke {
+      fill: none;
+      stroke: var(--color-3);
+    }
+
+    path {
+      fill: inherit;
+      stroke: inherit;
+    }
+  }
+
+  > svg {
+    margin: 0.5rem 0;
+  }
+  > svg:first-child {
+    margin-top: 0;
+  }
+  > svg:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.svg-bucket--abs {
+  // position: absolute;
+  // top: 432px;
+  // left: 408px;
+  // width: 100px;
+  display: none;
+
+  @media screen and (min-width: $bp-xl) {
+    display: flex;
+    position: relative;
+    // reset and override inline styles
+    width: 100%;
+    top: initial !important;
+    left: initial !important;
+  }
+}
