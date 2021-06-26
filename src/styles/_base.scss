@@ -21,6 +21,7 @@ html {
   --pictureBoxTopPad: 10%;
   --pictureBoxBottomPad: calc(2 * var(--pictureBoxTopPad));
   --gutter: 32px;
+  --inset: 16px;
 }
 
 // Variables we cant assign to root
