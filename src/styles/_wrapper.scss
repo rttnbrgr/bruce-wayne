@@ -2,7 +2,6 @@
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
-  // padding: 3rem;
   padding-top: 1.5rem; // 24
   // merge
   display: flex;
@@ -17,40 +16,29 @@
   @media screen and (min-width: $bp-xl) {
     padding: 4rem;
     flex-direction: row;
-    // .col {
-    //   background: pink;
-    // }
-    .col--1 {
-      background: rgba(200, 0, 200, 0.2);
-    }
-    .col--2 {
-      background: rgba(0, 200, 200, 0.2);
-    }
-    .col--1,
-    .col--2 {
-      max-width: 640px;
-    }
   }
 }
 
-.col--1 {
-  // display: none;
+.col {
+  --colPadding: 32px;
+  --colBasis: calc(var(--pictureBoxMaxWidth) + (var(--colPadding) * 2));
+  max-width: var(--pictureBoxMaxWidth);
   flex: 0 1 50%;
 
-  @media screen and (min-width: $bp-xl) {
-    display: block;
+  &.col--1 {
+    flex-shrink: 2;
   }
-}
 
-.col--2 {
-  flex: 0 0 50%;
-  max-width: var(--pictureBoxMaxWidth);
-
-  > div {
-    position: relative;
+  &.col--2 {
   }
 
   @media screen and (min-width: $bp-xl) {
+    padding: 0 var(--colPadding);
+    flex-basis: var(--colBasis);
     max-width: none;
+  }
+
+  @media screen and (min-width: $bp-xxl) {
+    --colPadding: 64px;
   }
 }
