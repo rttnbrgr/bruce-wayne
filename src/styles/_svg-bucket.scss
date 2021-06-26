@@ -21,25 +21,8 @@
 
 // Shared SVG Rules
 .svg-bucket {
-  // display: none;
   display: flex;
   flex-direction: column;
-  // // test position
-  // &.bucket--abs {
-  //   position: absolute;
-  //   top: 432px;
-  //   left: 408px;
-  //   width: 100px;
-  //   display: none;
-
-  //   @media screen and (min-width: $bp-xl) {
-  //     position: relative;
-  //     // reset and override inline styles
-  //     width: 100%;
-  //     top: initial !important;
-  //     left: initial !important;
-  //   }
-  // }
 
   svg {
     width: 100%;
@@ -72,18 +55,9 @@
 }
 
 .svg-bucket--abs {
-  // position: absolute;
-  // top: 432px;
-  // left: 408px;
-  // width: 100px;
-  display: none;
+  height: 0;
 
   @media screen and (min-width: $bp-xl) {
-    display: flex;
-    position: relative;
-    // reset and override inline styles
-    width: 100%;
-    top: initial !important;
-    left: initial !important;
+    height: initial;
   }
 }
