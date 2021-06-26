@@ -1,6 +1,6 @@
 function addSvgStack() {
   //do work
-  const svgFillEl = document.getElementById("svgFill");
+  const svgFillEl = document.querySelector(".svg--fill");
   const svgFillMarkup = svgFillEl.outerHTML;
   const svgStrokeEl = document.getElementById("svgStroke");
   console.log("svgStrokeEl", svgStrokeEl);
